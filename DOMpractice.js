@@ -30,6 +30,8 @@ blueBox.addEventListener('mouseover', function() {
   redBox.style.backgroundColor = 'orange';
 });
 
-document.addEventListener('keydown', function(r) {
+document.body.addEventListener('keypress', function(r) {
+  if (r.key === 'r') {
   newExercise.innerText = 'Pew Pew Pew';
+}
 });
